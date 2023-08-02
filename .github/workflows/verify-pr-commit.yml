@@ -2,18 +2,17 @@
 #
 # SPDX-License-Identifier: GPL-2.0-only
 
-name: Conventional Commits
+name: Conventional Commits Verification Workflow
 
 on:
   pull_request:
 
 jobs:
   test-pr-commit-msg:
-    name: Test the commit message for PR.
+    name: Test the PR's commit message for compliance with Conventional Commits.
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-
       - uses: webiny/action-conventional-commits@v1.1.0
         with:
             GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
