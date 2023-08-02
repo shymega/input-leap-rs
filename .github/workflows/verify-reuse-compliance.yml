@@ -1,0 +1,16 @@
+# SPDX-FileCopyrightText: 2023 The Input-Leap Developers
+#
+# SPDX-License-Identifier: GPL-2.0-only
+
+name: REUSE Compliance workflow
+
+on:
+  pull_request:
+
+jobs:
+  test-reuse-compliance:
+    name: Test the commit for REUSE Compliance.
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: fsfe/reuse-action@v2
