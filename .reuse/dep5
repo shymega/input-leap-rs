@@ -1,0 +1,10 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: Input Leap-rs
+Upstream-Contact: The Input-Leap Developers <>
+Source: https://github.com/shymega/input-leap-rs.git
+
+# Sample paragraph, commented out:
+#
+# Files: src/*
+# Copyright: $YEAR $NAME <$CONTACT>
+# License: ...

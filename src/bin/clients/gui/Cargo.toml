@@ -1,0 +1,10 @@
+# SPDX-FileCopyrightText: 2023 The Input-Leap Developers
+#
+# SPDX-License-Identifier: GPL-2.0-only
+
+[package]
+name = "input-leap-rs-client-gui"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]

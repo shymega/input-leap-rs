@@ -1,0 +1,36 @@
+# SPDX-FileCopyrightText: 2023 The Input-Leap Developers
+#
+# SPDX-License-Identifier: GPL-2.0-only
+
+[workspace]
+members = [
+    "src/bin/clients/cli",
+    "src/bin/clients/gui",
+    "src/bin/primary",
+    "src/bin/screen",
+    "src/lib/core",
+    "src/lib/platforms"
+]
+
+[profile.dev]
+lto = true
+opt-level = 3
+codegen-units = 1
+debug = true
+
+[profile.dev.package."*"]
+codegen-units = 1
+opt-level = 3
+debug = true
+
+[profile.release]
+lto = true
+opt-level = 's'
+codegen-units = 1
+debug = true
+strip = true
+
+[profile.release.package."*"]
+codegen-units = 1
+opt-level = 's'
+debug = false
