@@ -28,6 +28,7 @@
 )]
 #[cfg_attr(target_os = "windows", path = "platforms/windows/mod.rs")]
 #[cfg_attr(target_os = "macos", path = "platforms/macos/mod.rs")]
-pub mod platform;
+mod platform;
 
+pub use self::platform::*;
 pub mod common;
