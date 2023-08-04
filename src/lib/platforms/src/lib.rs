@@ -22,7 +22,11 @@
 #[cfg_attr(
     all(
         target_family = "unix",
-        not(any(target_os = "ios", target_os = "macos"))
+        not(any(
+            target_os = "ios",
+            target_os = "macos",
+            target_os = "android"
+        ))
     ),
     path = "platforms/unix/mod.rs"
 )]
