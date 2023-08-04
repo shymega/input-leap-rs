@@ -8,6 +8,7 @@ version = "0.1.0"
 edition = "2018"
 
 [dependencies]
+uuid = { version = "1.4.1", features = ["serde", "v4", "fast-rng"] }
 
 [target.'cfg(all(target_family = "unix",not(any(target_os = "ios", target_os = "macos", target_os = "android"))))'.dependencies]
 breadx = "3.1.0"
