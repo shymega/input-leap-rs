@@ -22,7 +22,7 @@ pub trait ScreenTrait {
     /// This function returns the `human name` assigned to the `Screen`.
     fn get_human_name(&self) -> &str;
     /// This function returns the `Uuid` of the `Screen`.
-    fn get_uuid(&self) -> &uuid::Uuid;
+    fn get_uuid(&self) -> uuid::Uuid;
     /// This function returns the Zeroconf name advertised of the `Screen`.
     fn get_zeroconf_name(&self) -> &str;
     /// This function returns a `bool` value, representing if a `Screen` is connected to the
