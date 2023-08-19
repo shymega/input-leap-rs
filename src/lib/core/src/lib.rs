@@ -23,4 +23,6 @@
 pub mod reexports {
     //! Reexports of Input Leap-rs dependencies & componets.
     pub use input_leap_rs_platforms as platforms;
+    pub use rmp;
+    pub use rmp_serde;
 }

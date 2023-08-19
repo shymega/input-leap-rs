@@ -9,3 +9,5 @@ edition = "2018"
 
 [dependencies]
 input-leap-rs-platforms = { path = "../platforms" }
+rmp = "0.8.12"
+rmp-serde = "1.1.2"
